@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}
+Clients
+{% endblock title %}
+
+{% block body %}
+<form style="background-image: url(static/service_bg.jpg); margin-top: -12px;" method="POST" action = "/clients">
+        {% csrf_token %}
+    <div class="container " >
+            <h5 class=" fw-bold  ustify-content-sm-center py-5">Be our prefered client - send company Requirements to us. we provide World class manufacturing at competitive prices.</h5>
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+            <!-- Text input -->
+            <div class="form-outline mb-4">
+                <input type="text" id="form6Example3" name ="client_name" class="form-control" / required>
+                <label class="form-label" for="form6Example3">Name</label>
+            </div>
+
+            <!-- Text input -->
+            <div class="form-outline mb-4">
+                <input type="text" id="form6Example3" name ="client_company_name" class="form-control" / required>
+                <label class="form-label" for="form6Example3">Company name</label>
+            </div>
+
+            <!-- Text input -->
+            <div class="form-outline mb-4">
+                <input type="text" id="form6Example4" name ="client_address" class="form-control" / required>
+                <label class="form-label" for="form6Example4">Address</label>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="email" id="form6Example5" name ="client_email" class="form-control" / required>
+                <label class="form-label" for="form6Example5">Email</label>
+            </div>
+
+            <!-- Number input -->
+            <div class="form-outline mb-4">
+                <input type="number" id="form6Example6" name ="client_phone" class="form-control" / required>
+                <label class="form-label" for="form6Example6">Phone</label>
+            </div>
+
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+                <textarea class="form-control" id="form6Example7" name ="client_massage" rows="4" required></textarea>
+                <label class="form-label" for="form6Example7">Additional information</label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Send Query</button>
+        </div>
+</form>
+
+{% endblock body %}

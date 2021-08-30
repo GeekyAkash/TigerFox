@@ -1,0 +1,208 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock title %}
+
+
+{% block body %}
+<header>
+  <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+  <div class="overlay"></div>
+
+  <!-- The HTML5 video element that will create the background video on the header -->
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="static/Laser.mp4" type="video/mp4">
+  </video>
+
+  <!-- The header content -->
+  <div class="container h-100 ">
+        <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+            <h2  class=" fw-bold text-white">Tigerfox manufacturing is here with infinite manufacturing prowess</h>
+            <h4 class=" fw-bold text-white">we provide world class manufacturing at competitive prices.</h4>
+            <h6 class="text-white mb-4"><b>We caters various industries from EMS, solar, lightening, consumer goods, mobile and accessories, automotive, IoT, aerospace, defence, railways, medical equipment and device manufacturing, industrial goods to civil construction, mechanical goods, textiles and more</b></h6>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button onclick="window.location.href = '#services'"  type="button" class="btn btn-outline-primary btn-lg px-4 me-sm-3 fw-bold">Contract Manufacturing</button></a>
+                        <button type="button" class="btn btn-outline-danger btn-lg px-4">B2B</button>
+                </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</header>
+<!-- Gallery Content -->
+<div class="container">
+
+  <div class="row text-center text-lg-start my-5">
+
+    <div class="col-lg-3 col-md-4 col-6 mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="static/Carousel/A7.jpg" alt="">
+    </div>
+    <div class="col-lg-3 col-md-4 col-6 mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="static/Carousel/A10.jpg" alt="">
+    </div>
+    <div class="col-lg-3 col-md-4 col-6 mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="static/Carousel/A17.jpg" alt="">
+    </div>
+    <div class="col-lg-3 col-md-4 col-6 mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="static/Carousel/A9.jpg" alt="">
+    </div>
+    <div class="col-lg-3 col-md-4 col-6 mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="static/Carousel/A6.jpg" alt="">
+    </div>
+    <div class="col-lg-3 col-md-4 col-6 mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="static/Carousel/A11.jpg" alt="">
+    </div>
+    <div class="col-lg-3 col-md-4 col-6 mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="static/Carousel/A18.jpg" alt="">
+    </div>
+    <div class="col-lg-3 col-md-4 col-6 mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="static/Carousel/A14.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+<!--Carousel content-->
+<section class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+                <h4 class="my-3 " align="left">Tigerfox is not just a platform for manufacturing but a phenomenon to redefine the principles of manufacturing which is based on talent, technology, trust, speed, scale, transparency, reliability and safety of functions and various stake holders. </h4>
+            <div class="col-12">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class=" card ">
+                                        <img class="rounded-3 img-fluid" alt="100%x280" src="static/Carousel/A1.jpg">
+                                        <div class="card-body">
+                                            <p class="fw-bold card-text">We have a network of Original Equipment Manufacturers (OEM), Original Device Manufacturers (ODM), Engineering Procurement Construction and Commissioning (EPCC) entity having years of experience in large scale manufacturing and gained domain expertise in their field.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card ">
+                                        <img class="rounded-3 img-fluid" alt="100%x280" src="static/Carousel/A2.jpg">
+                                        <div class="card-body">
+                                            <p class="fw-bold card-text">We caters various industries such as EMS, solar, lightening, consumer goods, mobile and accessories, automotive, IoT, aerospace, defence, railways, medical equipment, industrial goods, civil construction, mechanical goods, textiles, food processing and more.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card ">
+                                        <img class="rounded-3 img-fluid" alt="100%x280" src="static/Carousel/A3.jpg">
+                                        <div class="card-body">
+                                            <p class="fw-bold card-text">Quality, reliability and safety have been our top priority for our customers, suppliers, vendors and workforce and we are committed to deliver what is best in industry within the lead time. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- The Services content -->
+<section id="services">
+<div class="container">
+    <div class="d-flex flex-row align-items-center" id="Services"></div>
+        <div class="heading mt-2 my-4"> Services</div>
+            <h4 class="my-2" align="center">Currently, we provide large scale contract manufacturing services in the following domain.</h4>
+            <div class="row mt-1 g-4">
+                <div class="col-md-6">
+                    <div class="shadow-lg card p-2">
+                        <div class="email mt-1"> <span>Electronics Manufacturing Services</span>
+                    </div>
+                    <div class="d-flex flex row align-items-center mr-3 mt-3">
+                        <div class="icons"> <i class="fa fa-check-circle"></i> <span>PCB designing and assembling services (EMS; EDMS; PCB; PCBA)</span> </div>
+                        <div class="icons"> <i class="fa fa-check-circle"></i> <span>Surface Mount Technology (SMT) & Manual insertion (MI)</span> </div>
+                        <div class="icons"> <i class="fa fa-check-circle"></i> <span>Stencil manufacturing</span> </div>
+                        <div class="icons"> <i class="fa fa-check-circle"></i> <span>Medical, aero-space and railways equipment manufacturing</span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="shadow-lg card p-2">
+                    <div class="email mt-1"> <span>BoxBuild</span>
+                    </div>
+                    <div class="d-flex flex row align-items-center mr-2 mt-2">
+                        <div class="icons4"> <i class="fa fa-check-circle"></i> <span>Mobile Phones and Accessories (chargers, cables, power-banks, ear-phones etc.)</span> </div>
+                        <div class="icons4"> <i class="fa fa-check-circle"></i> <span>CCTV, Smart LED TV, IOTs, Smart Energy Meters, GPS</span> </div>
+                        <div class="icons4"> <i class="fa fa-check-circle"></i> <span>Automotive parts</span> </div>
+                        <div class="icons4"> <i class="fa fa-check-circle"></i> <span>Refrigerator, Air conditioner and other consumer electronics products</span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="shadow-lg card p-2">
+                    <div class="email mt-1"> <span>Clean Energy</span>
+                    </div>
+                    <div class="d-flex flex row align-items-center mr-2 mt-2">
+                        <div class="icons1"> <i class="fa fa-check-circle"></i> <span>Solar Panels and LED lightening products</span> </div>
+                        <div class="icons1"> <i class="fa fa-check-circle"></i> <span>Electric bikes and bicycles</span> </div>               
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="shadow-lg card p-2">
+                    <div class="email mt-1"> <span>Textiles</span>
+                    </div>
+                    <div class="d-flex flex row align-items-center mr-2 mt-2">
+                        <div class="icons2"> <i class="fa fa-check-circle"></i> <span>Cotton Apparels; Super Dry</span> </div>
+                        <div class="icons2"> <i class="fa fa-check-circle"></i> <span>Jeans, Shirts; Ladies Garments and more</span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="shadow-lg card p-2">
+                    <div class="email mt-1"> <span>Injection Molding</span>
+                </div>
+                    <div class="d-flex flex row align-items-center mr-2 mt-2">
+                        <div class="icons3"> <i class="fa fa-check-circle"></i> <span>Metals and Plastic injection molding</span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="shadow-lg card p-2">
+                    <div class="email mt-1"> <span>Others</span>
+                    </div>
+                    <div class="d-flex flex row align-items-center mr-2 mt-2">
+                        <div class="icons5"> <i class="fa fa-check-circle"></i> <span>Toys Manufacturing</span> </div>
+                        <div class="icons5"> <i class="fa fa-check-circle"></i> <span>Flex printing services</span> </div>
+                        <div class="icons5"> <i class="fa fa-check-circle"></i> <span>Corporate gifting and printing services</span> </div>
+                        <div class="icons5"> <i class="fa fa-check-circle"></i> <span>Contract organic farming and Hydroponics</span> </div>
+                        <div class="icons5"> <i class="fa fa-check-circle"></i> <span>Gardening and Landscaping</span> </div>
+                        <div class="icons5"> <i class="fa fa-check-circle"></i> <span>Flex printing services</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</section>
+ <!-- The About Us content -->
+ <div class="about-section paddingTB60 my-5"  >
+                <div class="container" >
+                    <div class="row">
+						<div class="col-md-7 col-sm-6">
+							<div class="about-title clearfix">
+								<h1>About Us</h1>
+								<p class="about-paddingB">Tigerfox manufacturing is founded in August 2020 with a vision to create a global platform, which can accommodate all the manufacturing process and services needed in an industrialized society in a single platform, so that it becomes easier for manufacturers to fast-track their production from design phase. It also helps manufacturers to gain bulk contracts so that they don’t have to suffer from spare capacity.Tigerfox manufacturing is committed to provide best possible manufacturing services to our global customers so that the tiring process of manufacturing becomes a fun game for them. We provide transparency and real time updates into the whole process so that a synergy could be maintained between customers demand and manufacturers capability.For us, working with best in industry is privilege but at the same time we give best support to SMEs and MSMEs to become global suppliers so that a new league of high tech manufacturers could be created.</p>
+                                <div class="footer-social-icons">
+                                    <h4 class="_14">Follow us on</h4>
+                                    <ul class="social-icons">
+                                        <li><a href="https://www.facebook.com/profile.php?id=100072469680835" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://mobile.twitter.com/TigerfoxM" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.instagram.com/tigerfoxmanufacturing/" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCCLgmIL39ds-BN298BpnHlQ" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                                        <li><a href="http://linkedin.com/in/tigerfox-manufacturing-a9907121b" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                            </div>	
+                        </div>
+                    </div>
+                </div>
+{% endblock body %}

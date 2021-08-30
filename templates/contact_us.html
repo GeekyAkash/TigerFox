@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}
+Contact Us
+{% endblock title %}
+
+{% block body %}
+<form style="background-image: url(static/service_bg.jpg); margin-top: -12px;" method="POST" action = "/contact">
+        {% csrf_token %}
+    <div class="container " >
+            <h5 class=" fw-bold  ustify-content-sm-center py-5">Get In touch</h5>
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+            <input type="text" id="form4Example1" name ="contact_name" class="form-control" / required>
+            <label class="form-label" for="form4Example1">Name</label>
+        </div>
+
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+            <input type="email" id="form4Example2" name ="contact_email" class="form-control" / required>
+            <label class="form-label" for="form4Example2">Email address</label>
+        </div>
+
+        <!-- Message input -->
+        <div class="form-outline mb-4">
+            <textarea class="form-control" id="form4Example3" name ="contact_message" rows="4" required></textarea>
+            <label class="form-label" for="form4Example3">Message</label>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+
+        <!--Contact Options-->
+        <div class="d-md-flex flex-md-row justify-content-center py-4">
+            <div class="d-flex flex-column contact px-4">
+                <div class="d-md-flex justify-content-center icon py-2"> <span class="fa fa-phone"></span> <span class="mobile-info text-dark p-2 pb-3">+91 8368525174</span> </div>
+            </div>
+            <div class="d-flex flex-column contact px-4">
+                <div class="d-md-flex justify-content-center icon py-2"> <span class="fa fa-envelope"></span> <span class="mobile-info text-dark p-2 pb-3">contact@thetigerfox.com</span> </div>
+            </div>
+    </div>
+</form>
+</div>
+
+{% endblock body %}
